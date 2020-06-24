@@ -1,1 +1,34 @@
 # Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+
+.idea/
+Java.iml
+src/example/gc/
+src/example/io/
+src/example/jdbc/
+src/example/juc/
+src/example/jvm/
