@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>example.container.map</OriginalElement>
+  <nodes>
+    <node x="680.25" y="0.0">example.container.map.AbstractMap</node>
+    <node x="316.5" y="131.0">example.container.map.HashMap</node>
+    <node x="0.0" y="242.0">example.container.map.NavigableMap</node>
+    <node x="283.25" y="0.0">example.container.map.Map</node>
+    <node x="452.5" y="131.0">example.container.map.WeakHashMap</node>
+    <node x="455.7053571428571" y="353.0">example.container.map.TreeMap</node>
+    <node x="619.5" y="131.0">example.container.map.IdentityHashMap</node>
+    <node x="258.75" y="242.0">example.container.map.LinkedHashMap</node>
+    <node x="163.5" y="131.0">example.container.map.Hashtable</node>
+    <node x="818.5" y="131.0">example.container.map.EnumMap</node>
+    <node x="11.5" y="131.0">example.container.map.SortedMap</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="example.container.map.HashMap" target="example.container.map.Map">
+      <point x="-29.0" y="-30.5" />
+      <point x="345.5" y="111.0" />
+      <point x="332.83333333333337" y="111.0" />
+      <point x="7.083333333333371" y="30.5" />
+    </edge>
+    <edge source="example.container.map.HashMap" target="example.container.map.AbstractMap">
+      <point x="29.0" y="-30.5" />
+      <point x="403.5" y="101.0" />
+      <point x="694.95" y="101.0" />
+      <point x="-58.80000000000001" y="30.5" />
+    </edge>
+    <edge source="example.container.map.WeakHashMap" target="example.container.map.Map">
+      <point x="-36.75" y="-30.5" />
+      <point x="489.25" y="91.0" />
+      <point x="347.0" y="91.0" />
+      <point x="21.25" y="30.5" />
+    </edge>
+    <edge source="example.container.map.IdentityHashMap" target="example.container.map.Map">
+      <point x="-44.75" y="-30.5" />
+      <point x="664.25" y="81.0" />
+      <point x="361.16666666666663" y="81.0" />
+      <point x="35.41666666666663" y="30.5" />
+    </edge>
+    <edge source="example.container.map.IdentityHashMap" target="example.container.map.AbstractMap">
+      <point x="44.75" y="-30.5" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="example.container.map.Hashtable" target="example.container.map.Map">
+      <point x="0.0" y="-30.5" />
+      <point x="229.5" y="101.0" />
+      <point x="304.5" y="101.0" />
+      <point x="-21.25" y="30.5" />
+    </edge>
+    <edge source="example.container.map.TreeMap" target="example.container.map.AbstractMap">
+      <point x="29.0" y="-30.5" />
+      <point x="542.7053571428571" y="328.0" />
+      <point x="945.0" y="328.0" />
+      <point x="945.0" y="101.0" />
+      <point x="812.55" y="101.0" />
+      <point x="58.80000000000001" y="30.5" />
+    </edge>
+    <edge source="example.container.map.SortedMap" target="example.container.map.Map">
+      <point x="0.0" y="-30.5" />
+      <point x="77.5" y="91.0" />
+      <point x="290.33333333333337" y="91.0" />
+      <point x="-35.41666666666663" y="30.5" />
+    </edge>
+    <edge source="example.container.map.LinkedHashMap" target="example.container.map.HashMap">
+      <point x="40.75" y="-30.5" />
+      <point x="381.0" y="217.0" />
+      <point x="374.5" y="217.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="example.container.map.WeakHashMap" target="example.container.map.AbstractMap">
+      <point x="36.75" y="-30.5" />
+      <point x="562.75" y="111.0" />
+      <point x="724.35" y="111.0" />
+      <point x="-29.399999999999977" y="30.5" />
+    </edge>
+    <edge source="example.container.map.EnumMap" target="example.container.map.AbstractMap">
+      <point x="0.0" y="-30.5" />
+      <point x="876.5" y="111.0" />
+      <point x="783.1500000000001" y="111.0" />
+      <point x="29.400000000000034" y="30.5" />
+    </edge>
+    <edge source="example.container.map.LinkedHashMap" target="example.container.map.Map">
+      <point x="-40.75" y="-30.5" />
+      <point x="299.5" y="217.0" />
+      <point x="306.0" y="217.0" />
+      <point x="306.0" y="111.0" />
+      <point x="318.66666666666663" y="111.0" />
+      <point x="-7.083333333333371" y="30.5" />
+    </edge>
+    <edge source="example.container.map.NavigableMap" target="example.container.map.SortedMap">
+      <point x="0.0" y="-30.5" />
+      <point x="0.0" y="30.5" />
+    </edge>
+    <edge source="example.container.map.TreeMap" target="example.container.map.NavigableMap">
+      <point x="-29.0" y="-30.5" />
+      <point x="484.7053571428571" y="328.0" />
+      <point x="77.5" y="328.0" />
+      <point x="0.0" y="30.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="428.0" y="250.0" />
+  <SelectedNodes>
+    <node>example.container.map.SortedMap</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

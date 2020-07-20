@@ -1,4 +1,4 @@
-package example.utils;
+package example.container.utils;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -18,7 +18,7 @@ public class StreamTest {
         for (int i = -1; i < 10; i++) {
             list.add(i);
         }
-        list.add(8);
+        list.add(0,8);
         boolean anyMatch = list.stream().allMatch(integer -> integer > 0);
         System.out.println("anyMatch: integer > 0 ;result " + anyMatch);
         boolean noneMatch = list.stream().noneMatch(integer -> integer < 0);
@@ -43,14 +43,15 @@ public class StreamTest {
         System.out.println("count:  " + count);
         System.out.println(" ----------------我是一个分割线---------------------- ");
         //返回一个元素各异的流，说白了就是去重
-        list.stream().distinct().forEach(i -> System.out.print(i + "  "));
+        System.out.println(list.size());
+        System.out.println(list.stream().distinct().count());
         /**
          这个方法的主要作用是把 Stream 元素组合起来。它提供一个起始值（种子），
          然后依照运算规则（BinaryOperator），和前面 Stream 的第一个、第二个、第 n 个元素组合
          */
         long reduce = list.stream().reduce(0, (a, b) -> a + b).longValue();
         System.out.println("reduce: " + reduce);
-        System.out.print("forEachOrdered:");
+        System.out.print("forEachOrdered: ");
         list.stream().forEachOrdered(i -> System.out.print(i + "  "));
         System.out.println();
         System.out.println(" ----------------我是一个分割线---------------------- ");
@@ -85,7 +86,6 @@ public class StreamTest {
          * accumulator：类型为BiConsumer，注意这个接口是没有返回值的；它必须将一个元素放入结果容器中（JAVADOC）。
          * combiner：类型也是BiConsumer，因此也没有返回值。它与三参数的Reduce类型，只是在并行计算时汇总不同线程计算的结果。
          *          它的输入是两个结果容器，必须将第二个结果容器中的值全部放入第一个结果容器中（JAVADOC）。
-         *   list装map
          */
         Map<String, Integer> siMap = list.stream().collect(() -> new HashMap<>(),
                 (map, p) -> map.put(String.valueOf(p), p), (m, n) -> m.putAll(n));
